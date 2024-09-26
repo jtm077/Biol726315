@@ -1,0 +1,6 @@
+pigz 2.8
+igzip command line interface 2.31.0
+application/gzip
+Analysis complete for trimmed_reads_val_1.fq.gz
+application/gzip
+Analysis complete for trimmed_reads_val_2.fq.gz
