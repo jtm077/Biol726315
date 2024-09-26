@@ -90,4 +90,5 @@ I ran this job using these scripts:
 This job outputted:
 * qualimapReport.html
 
-Task 11:
+Task 11: We used IGV to view our reference sequence, reference annotation, and BAM alignment. 
+We opened the necessary files and viewed the BAM alignment as pairs. 
