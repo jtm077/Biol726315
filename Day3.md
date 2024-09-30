@@ -29,8 +29,8 @@ I ran this job using these scripts:
 * [bwa_index.sbatch](https://github.com/jtm077/Biol726315/blob/main/Scripts/BWA/bwa_index.sbatch)
 
 These files were outputted:
-* [ecoli_bwa_21125562_stderr.txt]
-* [ecoli_bwa_21125562_stdout.txt]
+* [bwa_index_21125562_stderr.txt]
+* [bwa_index_21125562_stdout.txt]
 
 
 Task 6: We aligned 'read_1' and 'read_2' to the reference genome. 
@@ -88,7 +88,7 @@ I ran this job using these scripts:
 * [ecoli_qualimap.sbatch](https://github.com/jtm077/Biol726315/blob/main/Scripts/BWA/ecoli_qualimap.sbatch)
 
 This job outputted:
-* [qualimapReport.html]()
+* [Qualimap report_ BAM QC.pdf](https://github.com/jtm077/Biol726315/blob/main/Genomic%20Adventures/bmqc%20outputs/Qualimap%20report_%20BAM%20QC.pdf)
 
 Task 11: We used IGV to view our reference sequence, reference annotation, and BAM alignment. 
 We opened the necessary files and viewed the BAM alignment as pairs. 
