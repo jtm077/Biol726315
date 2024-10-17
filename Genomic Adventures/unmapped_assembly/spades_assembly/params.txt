@@ -1,0 +1,37 @@
+Command line: /home/mbtoomey/.conda/envs/BIOL7263_Genomics/bin/spades.py	--careful	-o	/scratch/biol726315/BIOL7263_Genomics/sequencing_data/ecoli/unmapped_assembly/spades_assembly	-1	/scratch/biol726315/BIOL7263_Genomics/sequencing_data/ecoli/unmapped_assembly/unmapped_r1.fastq	-2	/scratch/biol726315/BIOL7263_Genomics/sequencing_data/ecoli/unmapped_assembly/unmapped_r2.fastq	
+
+System information:
+  SPAdes version: 3.15.5
+  Python version: 3.7.12
+  OS: Linux-3.10.0-1127.el7.x86_64-x86_64-with-centos-7.8.2003-Core
+
+Output dir: /scratch/biol726315/BIOL7263_Genomics/sequencing_data/ecoli/unmapped_assembly/spades_assembly
+Mode: read error correction and assembling
+Debug mode is turned OFF
+
+Dataset parameters:
+  Standard mode
+  For multi-cell/isolate data we recommend to use '--isolate' option; for single-cell MDA data use '--sc'; for metagenomic data use '--meta'; for RNA-Seq use '--rna'.
+  Reads:
+    Library number: 1, library type: paired-end
+      orientation: fr
+      left reads: ['/scratch/biol726315/BIOL7263_Genomics/sequencing_data/ecoli/unmapped_assembly/unmapped_r1.fastq']
+      right reads: ['/scratch/biol726315/BIOL7263_Genomics/sequencing_data/ecoli/unmapped_assembly/unmapped_r2.fastq']
+      interlaced reads: not specified
+      single reads: not specified
+      merged reads: not specified
+Read error correction parameters:
+  Iterations: 1
+  PHRED offset will be auto-detected
+  Corrected reads will be compressed
+Assembly parameters:
+  k: automatic selection based on read length
+  Repeat resolution is enabled
+  Mismatch careful mode is turned ON
+  MismatchCorrector will be used
+  Coverage cutoff is turned OFF
+Other parameters:
+  Dir for temp files: /scratch/biol726315/BIOL7263_Genomics/sequencing_data/ecoli/unmapped_assembly/spades_assembly/tmp
+  Threads: 16
+  Memory limit (in Gb): 31
+
