@@ -58,6 +58,7 @@ Then, we were supposed to search open reading frames against NCBI non-redundant 
 *[unmapped_blastn.sbatch](https://github.com/jtm077/Biol726315/blob/main/Genomic%20Adventures/unmapped_assembly/scripts/unmapped_blastn.sbatch)
 
 This was outputted:
+
 *[unmapped_blast_to_genome](https://github.com/jtm077/Biol726315/blob/main/Genomic%20Adventures/unmapped_assembly/spades_assembly/unmapped_blast_to_genome)
 
 Task 7: Run Open Reading Frames Through pfam_scan
