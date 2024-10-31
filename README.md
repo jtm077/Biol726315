@@ -10,6 +10,8 @@ Here are my notes from:
 - [Day 6: Genomics Adventure Chapter 4](https://github.com/jtm077/Biol726315/blob/main/Day6.md)
 - [Day 7: RNA-Seq Analysis](https://github.com/jtm077/Biol726315/blob/main/Day7.md)
 - [Day 8: Genomics Adventure Chapter 5]()
+- [Day 9: Genome Wide Analysis]()
+- [Day 10: Open Work Day]()
 
 Class Project:
 - [Research Proposal](https://github.com/jtm077/Biol726315/blob/main/Class%20Project/BIOL7263%20Project%20Proposal.pdf)
