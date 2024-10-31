@@ -1,0 +1,7 @@
+"bwa": "/home/mbtoomey/.conda/envs/BIOL7263_Genomics/bin/spades-bwa"
+"dataset": "/scratch/biol726315/BIOL7263_Genomics/sequencing_data/ecoli/unmapped_assembly/spades_assembly/input_dataset.yaml"
+"log_filename": "log.properties"
+"max_nthreads": !!int "16"
+"output_dir": "/scratch/biol726315/BIOL7263_Genomics/sequencing_data/ecoli/unmapped_assembly/spades_assembly/mismatch_corrector/contigs"
+"strategy": "mapped_squared"
+"work_dir": "/scratch/biol726315/BIOL7263_Genomics/sequencing_data/ecoli/unmapped_assembly/spades_assembly/tmp/corrector_wl5506kb"

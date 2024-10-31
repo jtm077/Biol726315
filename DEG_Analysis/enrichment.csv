@@ -1,0 +1,5 @@
+"Enrichment FDR","nGenes","Pathway Genes","Fold Enrichment","Pathway","URL","Genes"
+0.0323922364448695,12,108,3.20769741207697,"Path:hsa03013 Nucleocytoplasmic transport","http://www.genome.jp/kegg-bin/show_pathway?hsa03013 "," SRRM1  ACIN1  NUP210  NUP188  KPNA6  AHCTF1  NUP43  RANBP2  NUP214  NUP155  POM121  NUP153"
+0.00483368381088986,19,181,3.0108177804974,"Path:hsa04360 Axon guidance","http://www.genome.jp/kegg-bin/show_pathway?hsa04360 "," ARHGEF12  PLXNB2  ABL1  GSK3B  ABLIM1  MET  PAK2  PDPK1  PLCG1  PLXNA1  PLXNA2  ENAH  PTCH1  PTK2  PTPN11  ROBO1  TRPC1  SLIT2  ROCK2"
+0.0323922364448695,16,224,2.58180523411073,"Path:hsa05163 Human cytomegalovirus infection","http://www.genome.jp/kegg-bin/show_pathway?hsa05163 "," AKAP13  ADCY7  ADCY9  ARHGEF12  GNAQ  GNB1  GSK3B  PTK2  GNB4  RPS6KB1  CREB3L2  SOS1  STAT3  TRAF2  RIPK1  ROCK2"
+0.0323922364448695,17,202,2.5416924409254,"Path:hsa05205 Proteoglycans in cancer","http://www.genome.jp/kegg-bin/show_pathway?hsa05205 "," FLNA  ARHGEF12  GAB1  ANK2  HSPG2  MET  PDPK1  PLCG1  PTCH1  PTK2  PTPN11  RPS6KB1  SOS1  STAT3  TIAM1  IQGAP1  ROCK2"

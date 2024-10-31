@@ -1,0 +1,9 @@
+- "left reads":
+  - "/scratch/biol726315/BIOL7263_Genomics/sequencing_data/ecoli/unmapped_assembly/spades_assembly/corrected/unmapped_r1.00.0_0.cor.fastq.gz"
+  "number": !!int "1"
+  "orientation": "fr"
+  "right reads":
+  - "/scratch/biol726315/BIOL7263_Genomics/sequencing_data/ecoli/unmapped_assembly/spades_assembly/corrected/unmapped_r2.00.0_0.cor.fastq.gz"
+  "single reads":
+  - "/scratch/biol726315/BIOL7263_Genomics/sequencing_data/ecoli/unmapped_assembly/spades_assembly/corrected/unmapped_r_unpaired.00.0_0.cor.fastq.gz"
+  "type": "paired-end"

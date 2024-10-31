@@ -1,0 +1,66 @@
+/home/mbtoomey/.conda/envs/BIOL7263_Genomics/bin/quast.py --output-dir quast contigs.fasta
+
+Version: 5.0.2
+
+System information:
+  OS: Linux-3.10.0-1127.el7.x86_64-x86_64-with-centos-7.8.2003-Core (linux_64)
+  Python version: 3.7.12
+  CPUs number: 40
+
+Started: 2024-10-24 15:56:17
+
+Logging to /scratch/biol726315/BIOL7263_Genomics/sequencing_data/ecoli/assembly/quast/quast.log
+NOTICE: Maximum number of threads is set to 10 (use --threads option to set it manually)
+
+CWD: /scratch/biol726315/BIOL7263_Genomics/sequencing_data/ecoli/assembly
+Main parameters: 
+  MODE: default, threads: 10, minimum contig length: 500, minimum alignment length: 65, \
+  ambiguity: one, threshold for extensive misassembly size: 1000
+
+Contigs:
+  Pre-processing...
+  contigs.fasta ==> contigs
+
+2024-10-24 15:56:20
+Running Basic statistics processor...
+  Contig files: 
+    contigs
+  Calculating N50 and L50...
+    contigs, N50 = 111731, L50 = 14, Total length = 4595430, GC % = 50.73, # N's per 100 kbp =  0.00
+  Drawing Nx plot...
+    saved to /scratch/biol726315/BIOL7263_Genomics/sequencing_data/ecoli/assembly/quast/basic_stats/Nx_plot.pdf
+  Drawing cumulative plot...
+    saved to /scratch/biol726315/BIOL7263_Genomics/sequencing_data/ecoli/assembly/quast/basic_stats/cumulative_plot.pdf
+  Drawing GC content plot...
+    saved to /scratch/biol726315/BIOL7263_Genomics/sequencing_data/ecoli/assembly/quast/basic_stats/GC_content_plot.pdf
+  Drawing contigs GC content plot...
+    saved to /scratch/biol726315/BIOL7263_Genomics/sequencing_data/ecoli/assembly/quast/basic_stats/contigs_GC_content_plot.pdf
+  Drawing Coverage histogram (bin size: 3x)...
+    saved to /scratch/biol726315/BIOL7263_Genomics/sequencing_data/ecoli/assembly/quast/basic_stats/coverage_histogram.pdf
+  Drawing contigs coverage histogram (bin size: 3x)...
+    saved to /scratch/biol726315/BIOL7263_Genomics/sequencing_data/ecoli/assembly/quast/basic_stats/contigs_coverage_histogram.pdf
+Done.
+
+NOTICE: Genes are not predicted by default. Use --gene-finding or --glimmer option to enable it.
+
+2024-10-24 15:56:23
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 2: Creating Icarus viewers...
+  2 of 2: Creating PDF with all tables and plots...
+Done
+
+2024-10-24 15:56:24
+RESULTS:
+  Text versions of total report are saved to /scratch/biol726315/BIOL7263_Genomics/sequencing_data/ecoli/assembly/quast/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /scratch/biol726315/BIOL7263_Genomics/sequencing_data/ecoli/assembly/quast/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) is saved to /scratch/biol726315/BIOL7263_Genomics/sequencing_data/ecoli/assembly/quast/report.html
+  PDF version (tables and plots) is saved to /scratch/biol726315/BIOL7263_Genomics/sequencing_data/ecoli/assembly/quast/report.pdf
+  Icarus (contig browser) is saved to /scratch/biol726315/BIOL7263_Genomics/sequencing_data/ecoli/assembly/quast/icarus.html
+  Log is saved to /scratch/biol726315/BIOL7263_Genomics/sequencing_data/ecoli/assembly/quast/quast.log
+
+Finished: 2024-10-24 15:56:24
+Elapsed time: 0:00:06.549685
+NOTICEs: 2; WARNINGs: 0; non-fatal ERRORs: 0
+
+Thank you for using QUAST!

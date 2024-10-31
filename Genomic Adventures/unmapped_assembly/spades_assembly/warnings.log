@@ -1,0 +1,4 @@
+
+=== Error correction and assembling warnings:
+ * 0:00:06.643     2M / 309M  WARN    General                 (launcher.cpp              : 178)   Your data seems to have high uniform coverage depth. It is strongly recommended to use --isolate option.
+======= Warnings saved to /scratch/biol726315/BIOL7263_Genomics/sequencing_data/ecoli/unmapped_assembly/spades_assembly/warnings.log
