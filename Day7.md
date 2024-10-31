@@ -56,4 +56,7 @@ This week we worked on a tutorial for RNA-Seq Analysis:
   We also visualized this through a heatmap.
 
   *[Heatmap_of_Transcripts](https://github.com/jtm077/Biol726315/blob/main/DEG_Analysis/Rplot02.pdf)
+
+- GO Analysis:
+  Then we took our dataframe and copied it into ShinyGO.
     
