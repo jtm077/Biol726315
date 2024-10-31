@@ -28,10 +28,6 @@ I ran this job using these scripts:
 * [bwa_index.sh](https://github.com/jtm077/Biol726315/blob/main/Scripts/BWA/bw_index.sh)
 * [bwa_index.sbatch](https://github.com/jtm077/Biol726315/blob/main/Scripts/BWA/bwa_index.sbatch)
 
-These files were outputted:
-* [bwa_index_21125562_stderr.txt]
-* [bwa_index_21125562_stdout.txt]
-
 
 Task 6: We aligned 'read_1' and 'read_2' to the reference genome. 
 
