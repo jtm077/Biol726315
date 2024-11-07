@@ -15,22 +15,28 @@ This week we worked on a tutorial for RNA-Seq Analysis:
   
   *Transcription quantification: We did this by submitting an array job to OSCER.
     + Scripts for this job:
+
       *[kallisto.quant.sh](https://github.com/jtm077/Biol726315/blob/main/Scripts/RNAseq_Example/kallisto_quant.sh)
+      
       *[kallisto.quant.args](https://github.com/jtm077/Biol726315/blob/main/Scripts/RNAseq_Example/kallisto_quant.args)
+      
       *[kallisto_quant.sbatch](https://github.com/jtm077/Biol726315/blob/main/Scripts/RNAseq_Example/kallisto_quant.sbatch)
       
     + Output folder:
+      
       *[output](https://github.com/jtm077/Biol726315/tree/main/DEG_Analysis/output)
       
     Before we left OSCER we used grep to pull the headers from the transcriptome file and piped it to a sed command. This parsed the headers and wrote the ID and gene symbols into a new file.
     
     + New file:
+      
       *[TTC_headers.txt](https://github.com/jtm077/Biol726315/blob/main/DEG_Analysis/TTC_headers.txt)
       
 - Differential gene expression ananlysis:                                                                                                                                                                                                     
   We used sleuth to compare transcript expression levels between treatment groups. We also used EnhancedVolcano package for plotting. After installing the necessary packages, we created a tab-separated list of treatment conditions for our samples.
   
   + Tab-separated list:
+    
     *[ExpTable_TTC.txt](https://github.com/jtm077/Biol726315/blob/main/DEG_Analysis/ExpTable_TTC.txt)
 
   Then, we loaded the following packages:
@@ -43,7 +49,14 @@ This week we worked on a tutorial for RNA-Seq Analysis:
   
 - Volcano Plots:
   We generated a volcano plot to visualize the relative expression of all the transcripts between two conditions.
+
+  *[Volcano_Plot](https://github.com/jtm077/Biol726315/blob/main/DEG_Analysis/Rplot01.pdf)
   
 - Heatmap of transcripts:
   We also visualized this through a heatmap.
+
+  *[Heatmap_of_Transcripts](https://github.com/jtm077/Biol726315/blob/main/DEG_Analysis/Rplot02.pdf)
+
+- GO Analysis:
+  Then we took our dataframe and copied it into ShinyGO.
     
