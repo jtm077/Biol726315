@@ -16,7 +16,7 @@ We analyzed ovary tissues from female zebrafish exposed to the following pressur
 * Differential Gene Expression (DEG) Analysis with Sleuth & TopGO in RStudio
 
 ## Data Sources
-!THIS DATA IS NOT FROM THE MIKA LAB!
+**!THIS DATA IS NOT FROM THE MIKA LAB!**
 
 The data used in this analysis was pulled from the NCBI database. The RNA sequencing was obtained using mirVana™ miRNA Isolation Kit (Ambion-1561, Thermo Fisher
 Scientific, Inc, USA). The samples and conditions are as followed:
