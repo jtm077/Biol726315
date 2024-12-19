@@ -83,7 +83,7 @@ ttn<-read_delim("Press_headers.txt", col_names = FALSE)
 colnames(ttn)<-c("target_id","gene")
 ```
 
-After this we processed the data with sleuth_prep:
+After this, we processed the data with sleuth_prep:
 ```
 so <- sleuth_prep(metadata, full_model = ~treat, target_mapping = ttn, extra_bootstrap_summary = TRUE, read_bootstrap_tpm = TRUE, aggregation_column = "gene")
 
@@ -142,7 +142,7 @@ Then, we made our volcano plot:
 
 * [Resulting Volcano Plot](https://github.com/jtm077/Biol726315/blob/main/Class%20Project/Volcano_Map.png)
 
-From our volcano map, you can see that we got a single significantly upregulated gene, nucleoporin 62-like protein (nup62l).
+From our volcano map, you can see that we got a single significantly upregulated gene, nucleoporin 62-like protein (_nup62l_).
 
 #### Heat Map
 We exported data within the sleuth object with kallisto_table so we could generate a heat map to visualize our results:
@@ -177,10 +177,10 @@ pheatmap(k_DEG_select, cexRow = 0.4, cexCol = 0.4, scale = "none")
 
 * [Resulting Heat Map](https://github.com/jtm077/Biol726315/blob/main/Class%20Project/Heat_Map.png)
 
-From our heat map, you can see that we have many genes that have a change in regulation level when exposed to pressure. Some standouts include Zgc:153867, which is downregulated by quite a bit when exposed to higher pressures. There are also setd9 and akr1a1b, which are upregulated when exposed to higher pressures.
+From our heat map, you can see that we have many genes that have a change in regulation level when exposed to pressure. Some standouts include Zgc:153867, which is downregulated by quite a bit when exposed to higher pressures. There are also _setd9_ and _akr1a1b_, which are upregulated when exposed to higher pressures.
 
 ### TopGO in R
-We did a gene ontology (GO) analysis. First we prepared our input data:
+We did a gene ontology (GO) analysis. First, we prepared our input data:
 ```
 #filter for transcripts enriched in the Press treatment
 transcripts_up <- dplyr::filter(transcripts_all, qval <= 0.05, b > 0)
@@ -252,4 +252,4 @@ write.csv(all_results, "go_analysis_results.csv", row.names = FALSE)
 From our enrichment analysis, we can see that there are enriched pathways dealing with DNA repair and protein synthesis and modification.
 
 ## Conclusions
-From our significant gene findings from our volcano map, we can theorize that nup62l has a potential role in the pressure response. In our GO Analysis, there are DNA repair and protein synthesis pathways being enriched, and these could be the organism's attempts to maintain homeostasis and cell stability when exposed to this extreme environmental stress. The upregulation of genes such as ark1a1b show signs to zebrafish having mechanisms to handle oxidative stress. In conclusion, zebrafish show a level of plasticity to adapt to their environments, possibly by changing developmental or increasing cellular repair mechanism activty.
+From our significant gene findings from our volcano map, we can theorize that _nup62l_ has a potential role in the pressure response. In our GO Analysis, there are DNA repair and protein synthesis pathways being enriched, and these could be the organism's attempts to maintain homeostasis and cell stability when exposed to this extreme environmental stress. The upregulation of genes such as _ark1a1b_ show signs to zebrafish having mechanisms to handle oxidative stress. In conclusion, zebrafish show a level of plasticity to adapt to their environments, possibly by changing developmental or increasing cellular repair mechanism activty.
