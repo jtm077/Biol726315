@@ -37,22 +37,25 @@ Scientific, Inc, USA). The samples and conditions are as followed:
 ## Analysis and Results
 ### QC
 We quality checked each file locally using the following .sh file (We did not utilize .sbatch because I used a local computer instead of a supercomputer such as OSCER that can use .sbatch):
-* fastqc.sh
+* [fastqc.sh](https://github.com/jtm077/Biol726315/blob/main/Class%20Project/fastqc.sh)
 
 Read quality reflects the accuracy of sequencing data, with metrics like **Phred scores**, **read length**, and **GC content** indicating reliability. High-quality reads are essential for accurate downstream analyses, while poor-quality reads can introduce errors. Tools like **FastQC** help assess and improve read quality. The read qualities for this analysis were very good, averaging a score of 35-36 for each paired sequence reading. 
 
+
 ### Trimming
 We used trimgalore to trim all of our reads. The following .sh file also runs another QC on the trimmed files to ensure we are not diminishing quality by too much:
-* trimgalore.sh
+* [trimgalore.sh](https://github.com/jtm077/Biol726315/blob/main/Class%20Project/trimgalore.sh)
+
 
 ### Kallisto
 #### index
 Before we could align these reads, we needed an index for Kallisto to utilize during alignment. After downloading the reference transcriptome from NCBI, we used the following .sh file to index the reference:
-* kallisto_index.sh
+* [kallisto_index.sh](https://github.com/jtm077/Biol726315/blob/main/Class%20Project/kallisto_index.sh)
 
 #### quant
 Then we proceeded to use the outputted .idx file to quanitfy the reads with the following .sh file:
-* kallisto quant
+* [kallisto quant](https://github.com/jtm077/Biol726315/blob/main/Class%20Project/kallisto_quant.sh)
+
 
 ### Sleuth in RStudio
 #### Volcano 
@@ -78,11 +81,13 @@ ttn<-read_delim("Press_headers.txt", col_names = FALSE)
   
 colnames(ttn)<-c("target_id","gene")
 ```
+
 After this we processed the data with sleuth_prep:
 ```
 so <- sleuth_prep(metadata, full_model = ~treat, target_mapping = ttn, extra_bootstrap_summary = TRUE, read_bootstrap_tpm = TRUE, aggregation_column = "gene")
 
 ```
+
 Next, we fitted the model and calculate test statistics:
 ```
 #fit model specified above
@@ -115,6 +120,7 @@ genes_all <- sleuth_results(so, 'treatTTC', show_all = FALSE, pval_aggregate = T
 
 > head(genes_all, 10)
 ```
+
 Then, we made our volcano plot:
 ```
   #extract the gene symbols, qval, and b values from the Wlad test results
@@ -132,7 +138,10 @@ Then, we made our volcano plot:
                   labSize = 3,
                   legendPosition = "none")
 ```
-* Resulting Volcano Plot
+
+* [Resulting Volcano Plot](https://github.com/jtm077/Biol726315/blob/main/Class%20Project/Volcano_Map.png)
+
+From our volcano map, you can see that we got a single significantly upregulated gene, nucleoporin 62-like protein (nup62l).
 
 #### Heat Map
 We exported data within the sleuth object with kallisto_table so we could generate a heat map to visualize our results:
@@ -142,6 +151,7 @@ k_table <- kallisto_table(so, normalized = TRUE)
 k_DEG <- k_table %>%
 right_join(transcripts_50, "target_id")
 ```
+
 Then, we began creating our heat map:
 ```
 k_DEG_select<-k_DEG %>%
@@ -163,6 +173,10 @@ as.matrix(rownames.force = TRUE)
 #plot with pheatmap!
 pheatmap(k_DEG_select, cexRow = 0.4, cexCol = 0.4, scale = "none")
 ```
+
+* [Resulting Heat Map](https://github.com/jtm077/Biol726315/blob/main/Class%20Project/Heat_Map.png)
+
+From our heat map, you can see that we have many genes that have a change in regulation level when exposed to pressure. Some standouts include Zgc:153867, which is downregulated by quite a bit when exposed to higher pressures. There are also setd9 and akr1a1b, which are upregulated when exposed to higher pressures.
 
 ### TopGO in R
 We did a gene ontology (GO) analysis. First we prepared our input data:
@@ -189,6 +203,7 @@ writeClipboard(as.character(up))
 #copy to clipboard and paste into topGO "gene_universe"
 writeClipboard(as.character(all))
 ```
+
 We used the characters copied to our clipboard to prepare data one last time for topGO:
 ```
 #create a gene universe with all of our genes for reference using what is in your clipboard from the writeClipboard(as.character(all)) command:
@@ -207,6 +222,7 @@ geneID2GO <- annFUN.org(whichOnto = "BP",  # Choose "BP", "MF", or "CC"
                       mapping = "org.Dr.eg.db", 
                       ID = "symbol")  # Use "ENSEMBL" or "ENTREZID" if applicable
 ```
+
 Then, we ran the enrichment analysis:
 ```
 # Fisher's exact test
@@ -215,16 +231,24 @@ results_fisher <- runTest(go_data, algorithm = "classic", statistic = "fisher")
 # Adjusted algorithm (e.g., weight)
 results_weight <- runTest(go_data, algorithm = "weight", statistic = "fisher")
 ```
+
 Examining the results:
 ```
 # Get top significant terms
 top_results <- GenTable(go_data, classicFisher = results_fisher, topNodes = 10)
 print(top_results)
 ```
+
 We retrieved the full results by running this command:
 ```
 # Extract all terms and save to a file
 all_results <- GenTable(go_data, classicFisher = results_fisher, weightFisher = results_weight, orderBy = "weightFisher", ranksOf = "classicFisher", topNodes = length(results_fisher@score))
 write.csv(all_results, "go_analysis_results.csv", row.names = FALSE)
 ```
+
+* [Enrichment Analysis Results](https://github.com/jtm077/Biol726315/blob/main/Class%20Project/GO_Analysis.png)
+
+From our enrichment analysis, we can see that there are enriched pathways dealing with DNA repair and protein synthesis and modification.
+
 ## Conclusions
+From our significant gene findings from our volcano map, we can theorize that nup62l has a potential role in the pressure response. In our GO Analysis, there are DNA repair and protein synthesis pathways being enriched, and these could be the organism's attempts to maintain homeostasis and cell stability when exposed to this extreme environmental stress. The upregulation of genes such as ark1a1b show signs to zebrafish having mechanisms to handle oxidative stress. In conclusion, zebrafish show a level of plasticity to adapt to their environments, possibly by changing developmental or increasing cellular repair mechanism activty.
