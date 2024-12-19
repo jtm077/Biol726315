@@ -59,6 +59,14 @@ Then we proceeded to use the outputted .idx file to quanitfy the reads with the 
 
 
 ### Sleuth in RStudio
+Before we can do our analysis in RStudio, we had to move our output file into the folder where we wanted to do our analyses. We also had to pull the headers of the gene from our reference transcriptome using the following command:
+```
+grep  '^>' GCF_000002035.6_GRCz11_rna.fna | sed -E 's/>([^ ]+) .* \(([^)]+)\).*/\1 \2/' > Press_headers.txt
+```
+
+We also made a tab separated list of the samples, conditions, and paths:
+* [ExpTable_Press](https://github.com/jtm077/Biol726315/blob/main/Class%20Project/ExpTable_Press.txt)
+
 #### Volcano 
 
 ```
