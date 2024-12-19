@@ -5,7 +5,7 @@
 In this study, we are using tissues collected from _Danio rerio_ (zebrafish). Zebrafish are shallow freshwater fish that are great models for research due to their genes, which are 70% similar to human genes, as well as their adequate size and ability to reproduce in large quantities. These organisms can withstand up to 100 atm of pressure, anything beyond results in mortality.
 
 ### Project Questions(s) and Hypothesis
-This project aims to see which genes are differentially expressed when zebrafish are exposed to increasing amounts of hydrostatic pressure. Based off passed research, we expect to see genes involved in protein structure and cell membrane structure. Other marine organisms exposed to high pressure have experienced changes in secondary structure of their proteis. As for their cell membranes, work has shown that they experience an increase in membrane fluidity and and a reduction in membrane thickness.
+This project aims to see which genes are differentially expressed when zebrafish are exposed to increasing amounts of hydrostatic pressure. Based off passed research, we expect to see genes involved in protein structure and cell membrane structure. Other marine organisms exposed to high pressure have experienced changes in secondary structure of their proteins. As for their cell membranes, past work has shown that they experience an increase in membrane fluidity and and a reduction in membrane thickness.
 
 ### Briefly describe study design
 We analyzed ovary tissues from female zebrafish exposed to the following pressure ranges: 0.1 MPa, 5.0 MPa, 9.0 MPa. We analyzed three tissue samples from each pressure treatment (total of 9 tissue samples), where we used the 0.1 MPa treatment as the control, since it is not too far off from the normal hydrostatic pressure exerted upon them in their natural habitats. To do this analyses we:
@@ -33,6 +33,7 @@ Scientific, Inc, USA). The samples and conditions are as followed:
 | Ovary2_9.0 | 9.0 MPa        |
 | Ovary3_9.0 | 9.0 MPa        |
 
+[Paper](https://pmc.ncbi.nlm.nih.gov/articles/PMC8920842/#s02) where data is pulled from.
 
 ## Analysis and Results
 ### QC
