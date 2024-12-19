@@ -67,6 +67,8 @@ grep  '^>' GCF_000002035.6_GRCz11_rna.fna | sed -E 's/>([^ ]+) .* \(([^)]+)\).*/
 We also made a tab separated list of the samples, conditions, and paths:
 * [ExpTable_Press](https://github.com/jtm077/Biol726315/blob/main/Class%20Project/ExpTable_Press.txt)
 
+Now we can move onto our analysis with Sleuth:
+
 #### Volcano 
 
 ```
