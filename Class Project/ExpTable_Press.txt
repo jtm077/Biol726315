@@ -1,0 +1,7 @@
+sample	treat	path
+ovary1_0.1	control	/Users/morel/OneDrive/Desktop/Biol526315/Biol726315/class_project/project_data/DEG_Analysis/DEG_Analysis_Ovary_DR/quant/ovary1_0.1
+ovary2_0.1	control	/Users/morel/OneDrive/Desktop/Biol526315/Biol726315/class_project/project_data/DEG_Analysis/DEG_Analysis_Ovary_DR/quant/ovary2_0.1
+ovary3_0.1	control	/Users/morel/OneDrive/Desktop/Biol526315/Biol726315/class_project/project_data/DEG_Analysis/DEG_Analysis_Ovary_DR/quant/ovary3_0.1
+ovary2_5.0	press	/Users/morel/OneDrive/Desktop/Biol526315/Biol726315/class_project/project_data/DEG_Analysis/DEG_Analysis_Ovary_DR/quant/ovary2_5.0
+ovary3_5.0	press	/Users/morel/OneDrive/Desktop/Biol526315/Biol726315/class_project/project_data/DEG_Analysis/DEG_Analysis_Ovary_DR/quant/ovary3_5.0
+ovary1_5.0	press	/Users/morel/OneDrive/Desktop/Biol526315/Biol726315/class_project/project_data/DEG_Analysis/DEG_Analysis_Ovary_DR/quant/ovary1_5.0
